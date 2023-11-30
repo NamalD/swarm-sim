@@ -1,5 +1,5 @@
-import math
+import numpy as np
 
 
 def easom(x, y):
-    -math.cos(x) * math.cos(y) * math.exp(-math.pow((x - math.pi), 2) -math.pow((y - math.pi), 2))
+    return -(np.cos(x) * np.cos(y) * np.exp(-(x - np.pi) ** 2 - (y - np.pi) ** 2))
